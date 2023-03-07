@@ -66,8 +66,9 @@ ui <- fluidPage(tags$main(
       verbatimTextOutput('print')
     )
   ),
-
   includeCSS(path = 'www/css/new_style.css'),
+
+
   div(
     class = 'main_grid_panel',
     #******************** TABSETPANELS ******************************************************
