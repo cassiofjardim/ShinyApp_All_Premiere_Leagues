@@ -1,0 +1,13 @@
+name: ShinyApp_All_Premiere_Leagues
+title: ShinyApp_All_Premiere_Leagues
+username:
+account: cfjardim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8502461
+bundleId: 6926362
+url: https://cfjardim.shinyapps.io/ShinyApp_All_Premiere_Leagues/
+when: 1678202424.41851
+lastSyncTime: 1678202424.41851
+asMultiple: FALSE
+asStatic: FALSE

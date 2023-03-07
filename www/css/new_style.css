@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: .5em;/* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #302f2f12;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb{
+  height: 10em;
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  border: 3px solid black;  /* creates padding around scroll thumb */
+}
+
+*{
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+      font-family: 'Exo 2', sans-serif;
+      text-transform: uppercase;
+
+}
+
+body{
+    height: fit-content !important;
+
+}
+
+
+.container-fluid {
+
+    height: fit-content;
+    border-radius: 10px;
+    border:2px solid;
+    /*    background: rgba(255,255,255,0.25);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);*/
+    /*border: 1px solid rgba(255,255,255,0.125);*/
+    border: none;
+    padding:0px;
+
+}
+
+/********************** MAIN file: app_mvp.R **************************/
+#main_page{
+
+}
+
+#main_page #top{
+
+
+
+  height: 200px;
+
+    background: #3D083E;
+    margin-bottom: 2em;
+
+/*    background-image: url(img/banner_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-position: center;*/
+
+}
+
+.banner{
+    object-fit: contain;
+}
+
+#main_page #sidebar {
+    display: flex;
+    flex-direction: column;
+
+    /* width: 100vw; */
+
+    grid-area: sidebar;
+    width: 100vw;
+    position: relative;
+    top: -4.5em;
+}
+
+#main_page #sidebar div:nth-child(1){
+
+}
+
+ #seasons{
+
+    text-align: center;
+ }
+
+ .btn-group-vertical.btn-group-sm.btn-group-container-sw{
+  display: flex;
+}
+
+#seasons button{
+ background: whitesmoke;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px !important;
+    border: none;
+    padding: 0.6em 1.2em;
+}
+
+#seasons button.active{
+      transform: translateY(-.5rem);
+      background: black;
+      color: whitesmoke;
+
+}
+
+#main_page #sidebar .link_btn {
+    display: flex;
+    flex-direction: row;
+    padding: 1.25em 1.25em 0.75em 1.25em;
+    gap: 2em;
+    overflow-x: scroll;
+}
+
+#main_page #sidebar div:nth-child(1) {
+    gap: 1em;
+}
+
+
+#main_page #sidebar .link_btn a {
+    text-align: center;
+    margin: .5em 0;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+
+.link_btn a:hover,
+.link_btn a:focus,
+.link_btn a:active {
+    transform: scale(1.5) !important;
+}
+
+.link_btn #teams_icons a span {
+    font-size: .75em;
+    color: black;
+    padding:.25em;
+    font-weight:500;
+    margin-top: .25em;
+    display: inline-block;
+}
+
+#main_page #sidebar .link_btn #teams_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#main_page .main_grid_panel {
+
+}
+
+.main_grid_panel {
+
+
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      /*backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);*/
+      border: 1px solid rgba(241, 224, 224, 0.67);
+      padding: 1em;      /*
+      background-color: #e2cca3;
+      background-image: radial-gradient(at 47% 33%, hsl(39.75, 75%, 73%) 0, transparent 59%), radial-gradient(at 82% 65%, hsl(197.95, 51%, 93%) 0, transparent 55%);
+      background: #ffdaa1;
+      background: -webkit-linear-gradient(113deg, #ffdaa1 0%, #a8f0ff 50%, #a8ced5 100%);
+      background: linear-gradient(258deg, #d1c3c3 10%, #ffffff 60%, #ffffff 100%);*/
+      /*background: linear-gradient(258deg, #4c454533 10%, #1a1a1a00 60%, #8d84841c 100*/%);
+      width: 100%;
+}
+
+
+
+@media (width >= 1550px ) {
+
+  #main_page{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+   div#teams_icons img{
+
+   width: 65px;
+     height: 65px;
+
+}
+}
+
+@media (1200px <= width <= 1549px) {
+
+   div#teams_icons img{
+
+     width: 60px;
+     height: 60px;
+
+
+}
+
+}
+
+@media ( width <= 1199px){
+
+  #main_page{
+    padding: 2em;
+    overflow: hidden;
+  }
+
+   div#teams_icons img{
+
+      width: 50px;
+     height: 50px;
+}
+
+}
